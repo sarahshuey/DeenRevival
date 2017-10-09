@@ -39,6 +39,9 @@ class BaseLayout extends Component {
                 <li style={navTitle}>
                   <NavLink  style={navTitle} activeClassName="selected" to="/OurServices">Our Services</NavLink>
                 </li>
+                <li style={navTitle}>
+                  <NavLink  style={navTitle} activeClassName="selected" to="/Testimonials">Testimonials</NavLink>
+                </li>
               </ul>
             </div>
           </div>

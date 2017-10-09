@@ -6,7 +6,7 @@ class ContactUs extends Component {
     return (
       <div className="App">
         <header className="header">
-          <h1 className="title">ContactUs</h1>
+          <h1 className="title">Contact Us</h1>
         </header>
         <div className="info">
         <p>

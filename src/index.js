@@ -10,6 +10,7 @@ import BaseLayout from'./components/BaseLayout';
 import AboutUs from'./components/AboutUs';
 import ContactUs from'./components/ContactUs';
 import OurServices from'./components/OurServices';
+import Testimonials from'./components/Testimonials';
 
 
 
@@ -21,6 +22,7 @@ ReactDOM.render(
        <Route path="/ContactUs" component={ContactUs} />
        <Route path="/AboutUs" component={AboutUs} />
        <Route path="/OurServices" component={OurServices} />
+       <Route path="/Testimonials" component={Testimonials}/>
      </Switch>
    </BaseLayout>
  </BrowserRouter>
