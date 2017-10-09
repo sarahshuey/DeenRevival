@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../Images/DEENREVIVALSmall.png'
 
 
 class BaseLayout extends Component {
@@ -12,7 +13,7 @@ class BaseLayout extends Component {
           "textDecoration": "none",
           "display":"flex",
           "flexDirection": "row",
-          "displayFlex": "center",
+          "displayFlex": "row-reverse",
           "paddingLeft":"10px",
           "color":"#0d0056"
         }
@@ -27,6 +28,7 @@ class BaseLayout extends Component {
           <div className="container-fluid">
             <div style={navTitle} className="navbar-header">
               <ul style={navTitle} className="nav navbar-nav">
+              <img src={logo} alt="logo"></img>
               <li style={navTitle}>
                 <NavLink style={navTitle} activeClassName="selected" to="/">Home</ NavLink >
               </li>
