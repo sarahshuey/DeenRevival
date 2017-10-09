@@ -5,9 +5,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to Deen Revival</h1>
+        <header className="header">
+          <h1 className="title">Welcome to Deen Revival</h1>
         </header>
+        <div>
+        Who we are:
+        What we do:
+        images of work
+        </div>
       </div>
     );
   }
