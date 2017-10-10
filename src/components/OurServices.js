@@ -5,10 +5,10 @@ class OurServices extends Component {
   render() {
     return (
       <div className="App">
-        <header className="header">
+        <header className="header" style={{color:"#007F86"}}>
           <h1 className="title">Our Services</h1>
         </header>
-        <div>
+        <div style={{color:"#007F86"}}>
         <h2>
         Bathrooms
         </h2>
