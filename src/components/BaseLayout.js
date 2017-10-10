@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../Images/DEENREVIVALSmall.png'
+import ham from '../Images/austinham.png'
 import '../styles/App.css';
 
 
@@ -39,7 +40,7 @@ class BaseLayout extends Component {
                 <div style={border} className="navbar-header">
                   <a href="/"><img src={logo} alt="logo" style={{paddingTop:"15px",paddingLeft:"30px"}}></img></a>
                   <div className="dropdown">
-                    <button className="dropbtn">Menu</button>
+                    <button className="dropbtn"><img src={ham} alt="Menu"></img></button>
                     <div className="dropdown-content">
                       <a href="/">Home</a>
                       <a href="/AboutUs">About Us</a>
