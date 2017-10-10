@@ -33,7 +33,7 @@ class BaseLayout extends Component {
           "borderBottomStyle":"solid",
         }
         return (
-          <div className="container-fluid nav">
+          <div className="body">
             <nav className="row navbar navbar-inverse">
               <div className="container-fluid">
                 <div style={border} className="navbar-header">
