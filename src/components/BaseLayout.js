@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../Images/DEENREVIVALSmall.png'
+import '../styles/App.css';
 
 
 class BaseLayout extends Component {
@@ -31,42 +32,34 @@ class BaseLayout extends Component {
           "borderBottomColor":"#007F86",
           "borderBottomStyle":"solid",
         }
-    return (
-      <div className="container-fluid nav">
-        <nav className="row navbar navbar-inverse">
-          <div className="container-fluid">
-            <div style={border} className="navbar-header">
-              <ul style={navTitle} className="nav navbar-nav">
-              <img src={logo} alt="logo"></img>
-              <li style={navTitle}>
-                <NavLink style={navTitle} activeClassName="selected" to="/">Home</ NavLink >
-              </li>
-                <li style={navTitle}>
-                  <NavLink style={navTitle} activeClassName="selected" to="/AboutUs">About Us</ NavLink >
-                </li>
-                <li style={navTitle}>
-                <NavLink style={navTitle} activeClassName="selected" to="/ContactUs"> Contact Us </NavLink>
-              </li>
-                <li style={navTitle}>
-                  <NavLink  style={navTitle} activeClassName="selected" to="/OurServices">Our Services</NavLink>
-                </li>
-                <li style={navTitle}>
-                  <NavLink  style={navTitle} activeClassName="selected" to="/Testimonials">Testimonials</NavLink>
-                </li>
-              </ul>
-            </div>
+        return (
+          <div className="container-fluid nav">
+            <nav className="row navbar navbar-inverse">
+              <div className="container-fluid">
+                <div style={border} className="navbar-header">
+                  <a href="/"><img src={logo} alt="logo" style={{paddingTop:"15px",paddingLeft:"30px"}}></img></a>
+                  <div className="dropdown">
+                    <button className="dropbtn">Menu</button>
+                    <div className="dropdown-content">
+                      <a href="/">Home</a>
+                      <a href="/AboutUs">About Us</a>
+                      <a href="/OurServices">Services</a>
+                      <a href="/ContactUs">Contact Us</a>
+                      <a href="/Testimonials">Testimonials</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            {this.props.children}
+            <footer style={footer} className="col-lg-11">
+              <span className="footer-title">Deen Revival | </span>
+              <span>
+                Austin, Tx | (512) 417-7859
+              </span>
+            </footer>
           </div>
-        </nav>
-        {this.props.children}
-        <footer style={footer} className="col-lg-11">
-          <span className="footer-title">Deen Revival | </span>
-          <span>
-            Austin, Tx | (512) 417 - 7859
-          </span>
-        </footer>
-      </div>
-    );
-  }
-}
-
+        );
+        }
+        }
 export default BaseLayout;
