@@ -8,25 +8,34 @@ class BaseLayout extends Component {
     let navTitle = {
           "fontFamily": "Arizonia",
           "fontSize": "20px",
-          "backgroundColor": '#bce9f4',
+          "backgroundColor": 'white',
           "textAlign": "center",
           "textDecoration": "none",
           "display":"flex",
           "flexDirection": "row",
           "displayFlex": "row-reverse",
           "paddingLeft":"10px",
-          "color":"#0d0056"
+          "color":"#007F86",
         }
         let footer = {
-          "backgroundColor": "#bce9f4",
+          "backgroundColor": "white",
           "textAlign": "center",
-          "color":"#0d0056"
+          "color":"#007F86",
+          "borderTopWidth":"3px",
+          "borderTopColor":"#007F86",
+          "borderTopStyle":"solid",
+          "paddingTop":"25px"
+        }
+        let border ={
+          "borderBottomWidth":"3px",
+          "borderBottomColor":"#007F86",
+          "borderBottomStyle":"solid",
         }
     return (
       <div className="container-fluid nav">
         <nav className="row navbar navbar-inverse">
           <div className="container-fluid">
-            <div style={navTitle} className="navbar-header">
+            <div style={border} className="navbar-header">
               <ul style={navTitle} className="nav navbar-nav">
               <img src={logo} alt="logo"></img>
               <li style={navTitle}>
