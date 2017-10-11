@@ -43,10 +43,7 @@
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    left: 970px;
-    bottom:0px
+float:right;
 }
 
 .dropdown-content {
@@ -66,8 +63,10 @@
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #007F86;
-color: white;}
+.dropdown-content a:hover {
+  background-color: #007F86;
+color: white;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;

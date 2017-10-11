@@ -32,13 +32,15 @@ class BaseLayout extends Component {
           "borderBottomWidth":"3px",
           "borderBottomColor":"#007F86",
           "borderBottomStyle":"solid",
+          "postion":"relative",
+          "overflow":"hidden"
         }
         return (
           <div className="body">
             <nav className="row navbar navbar-inverse">
               <div className="container-fluid">
                 <div style={border} className="navbar-header">
-                  <a href="/"><img src={logo} alt="logo" style={{paddingTop:"15px",paddingLeft:"30px"}}></img></a>
+                  <a href="/"><img src={logo} alt="logo" style={{paddingTop:"15px",paddingLeft:"30px",float:"left"}}></img></a>
                   <div className="dropdown">
                     <button className="dropbtn"><img src={ham} alt="Menu"></img></button>
                     <div className="dropdown-content">

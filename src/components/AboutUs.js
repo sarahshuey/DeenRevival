@@ -9,6 +9,11 @@ class AboutUs extends Component {
       flexDirection:"row",
       color:"#007F86",
     }
+    let textStyle={
+      color:"black",
+      lineHeight:"50px",
+      paddingRight:"20px"
+    }
     return (
       <div className="App">
         <header className="header" style={{color:"#007F86"}}>
@@ -20,7 +25,7 @@ class AboutUs extends Component {
         </div>
         <div className="AboutAustin" style={{color:"#007F86"}}>
         <h2> Austin Deen </h2>
-        <p> Austin Deen has been in construction for ----- years. He first got into construction when he was --- years old. Austin specializes in high end remodels with a focus on kitchens and bathrooms.This needs to be much longer add stuff about Texas State, and past work history.
+        <p style={textStyle}> Austin grew up in Austin Texas and have 10 years of high end residential construction experience. He got his start by sweeping floors for a local construction company, after learning the carpentry trade he took a break from construction and attended Texas State University where he got his bachelors degree in Constrution Science and Management. After school he went back to his former employer where he became a project manager. In 2016 Austin decided to step out on his own and started Deen Revival. Deen Revival stands for quality work at a quality price and goes the extra mile to guarantee the clients happiness.
         </p>
         </div>
       </div>
